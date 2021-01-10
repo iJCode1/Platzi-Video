@@ -75,3 +75,40 @@ body{
 .header--profile--account li a:hover{
     text-decoration: underline;
 }
+/* ------------ Search-bar ------------ */
+.section-search--container{
+    margin-top: 100px;
+    width: 100%
+}
+
+.search--container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.search--container > p, input{
+    color: var(--white);
+}
+
+.search--container  p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search--container input{
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 18px;
+    height: 50px;
+    outline: none;
+    padding: 0 20px;
+    width: 70%;
+}
+
+.search--container input::placeholder{
+    color: var(--white);
+}
