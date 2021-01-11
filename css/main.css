@@ -89,7 +89,8 @@ body{
     width: 100%;
 }
 
-.search--container > p, input{
+.search--container > p, input,
+.item__info--text p{
     color: var(--white);
 }
 
@@ -111,4 +112,76 @@ body{
 
 .search--container input::placeholder{
     color: var(--white);
+}
+/* ------------ My List ------------ */
+.section__mylist--container{
+    margin: 50px 0 70px 0;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.section__mylist--container h2{
+    color: var(--white);
+    font-size: 22px;
+}
+
+.mylist--container{
+    overflow: scroll;
+    padding: 65px 0;
+    white-space: nowrap;
+}
+
+.mylist--container:hover .mylist--item{
+    opacity: 0.3;
+}
+
+.mylist--item{
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 240px;
+    margin: 0 5px;
+    overflow: hidden;
+    position: relative;
+    transition: 450ms all;
+    transform-origin: center left;
+    width: 200px;
+}
+
+.mylist--item:hover ~ .mylist--item{
+    transform: translate3d(100px, 0, 0);
+}
+
+.mylist--container:hover .mylist--item:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.mylist--item img{
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+}
+
+.mylyst__item--info{
+    background-color: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    transition: 450ms opacity;
+}
+
+.mylyst__item--info{
+    padding: 5px 10px;
+}
+
+.item__info--buttons img{
+    width: 30px;
+    height: 30px;
+}
+
+.item__info--text{
+    font-size: 14px;
 }
