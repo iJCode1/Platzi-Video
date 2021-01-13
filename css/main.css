@@ -209,8 +209,6 @@ body{
 .login__card--container{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    width: 90%;
 }
 
 .login__card{
@@ -244,6 +242,7 @@ body{
 
 .login__card--check a{
     cursor: pointer;
+    margin-top: 0;
 }
 
 .login__card--check a:hover{
@@ -331,7 +330,7 @@ body{
 
 footer{
     display: flex;
-    height: 80px;
+    height: auto;
     justify-content: flex-start;
     margin-top: 10px;
     width: 100%;
@@ -347,13 +346,13 @@ footer a:hover{
     text-decoration: underline;
 }
 /* ------------------------ Register ------------------------ */
-.login__card a{
+.card--link{
     color: white;
     margin-top: 50px;
     text-align: center;
     text-decoration: none;
 }
 
-.login__card a:hover{
+.card--link:hover{
     text-decoration: underline;
 }
