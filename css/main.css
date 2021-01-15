@@ -132,6 +132,10 @@ body{
     white-space: nowrap;
 }
 
+.mylist--container::-webkit-scrollbar{
+    display: none;
+}
+
 .mylist--container:hover .mylist--item{
     opacity: 0.3;
 }
