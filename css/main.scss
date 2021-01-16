@@ -30,7 +30,7 @@ body{
     width: 100%;
 }
 
-.header__container > img{
+.header__container > a > img{
     width: 200px;
 }
 
@@ -369,7 +369,7 @@ footer a:hover{
 }
 
 .error__text--container{
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: pulse;
     animation-fill-mode: both;
@@ -379,10 +379,14 @@ footer a:hover{
 }
 
 @keyframes pulse{
-    from{
-        transform: scale(1);
-    }to{
-        transform: scale(1.5);
+    25%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.5)
+    }
+    100%{
+        transform: scale(1)
     }
 }
 
