@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Platzi Video es una Galeria de imagenes">
+        <title>iJCode - Inicio de Sesión</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/img/css3.webp" type="image/x-icon">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 450px)">
+    </head>
+    <body class="login__container">
+        <header class="header__login">
+            <a tabindex="0" href="/">
+                <img src="assets/img/logo-platzi.webp" alt="Platzi video logo">
+            </a>
+        </header>
+        <section class="login__card--container">
+            <div class="login__card">
+                <p tabindex="0">Inicia sesión</p>
+                <form>
+                    <input aria-label="Correo" type="email" placeholder="Correo" required>
+                    <input aria-label="Contraseña" type="password" placeholder="Contraseña" required>
+                    <button>Iniciar sesión</button>
+                    <div class="login__card--check">
+                       <div>
+                            <input type="checkbox" id="remember">
+                            <label tabindex="0" for="remember">Recuérdame</label>
+                       </div>
+                        <a tabindex="0">Olvidé mi contraseña</a>
+                    </div>
+                </form>
+                <div class="login__card--social">
+                    <div tabindex="0" class="social--network">
+                        <img src="./assets/img/google-icon.webp" alt="Google icon">
+                        <p>Inicia sesión con Google</p>
+                    </div>
+                    <div tabindex="0" class="social--network">
+                        <img src="./assets/img/Twitter_logo.webp" alt="Twitter icon">
+                        <p>Inicia sesión con Twitter</p>
+                    </div>
+                </div>
+                <p class="card--register">No tienes ninguna cuenta <a href="./register.html">Regístrate</a></p>
+            </div>
+        </section>
+        <footer>
+            <a href="#">Términos de uso</a>
+            <a href="#">Declaración de privacidad</a>
+            <a href="#">Centro de ayuda</a>
+        </footer>
+    </body>
+</html>
