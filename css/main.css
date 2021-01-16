@@ -1,396 +1,403 @@
-:root{
-    --purple: #8F57Fd;
-    --purple-light: #AB88FF;
-    --white: #FFFFFF;
-    --green: #21C08B;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+  --purple: #8F57Fd;
+  --purple-light: #AB88FF;
+  --white: #FFFFFF;
+  --green: #21C08B;
 }
 
-body{
-    background-color: var(--purple);
-    font-family: "Mulish", sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--purple);
+  font-family: "Mulish", sans-serif;
 }
 
 /* ------------ Header ------------ */
-.header{
-    height: 80px;
-    width: 100%;
+.header {
+  height: 80px;
+  width: 100%;
 }
 
-.header__container{
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    padding: 0 20px;
-    width: 100%;
+.header__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.header__container > img{
-    width: 200px;
+.header__container > img {
+  width: 200px;
 }
 
-.header__profile--container{
-    display: flex;
-    flex-direction: column;
+.header__profile--container {
+  display: flex;
+  flex-direction: column;
 }
 
 .header__profile--container li a,
 .header__profile {
-    color: var(--white);
+  color: var(--white);
 }
 
-.header__profile{
-    align-items: center;
-    display: flex;
+.header__profile {
+  align-items: center;
+  display: flex;
 }
 
-.header__profile img{
-    padding: 0 10px 0 0;
+.header__profile img {
+  padding: 0 10px 0 0;
 }
 
-.header--profile--account{
-    display: none;
-    list-style: none;
-    margin-top: 50px;
-    position: absolute;
-    text-align: right;
+.header--profile--account {
+  display: none;
+  list-style: none;
+  margin-top: 50px;
+  position: absolute;
+  text-align: right;
 }
 
-.header__profile--container:hover ul, ul:hover{
-    display: inline-block;
+.header__profile--container:hover ul, ul:hover {
+  display: inline-block;
 }
 
-.header--profile--account li{
-    padding: 5px 0;
+.header--profile--account li {
+  padding: 5px 0;
 }
 
-.header--profile--account li a{
-    text-decoration: none;
+.header--profile--account li a {
+  text-decoration: none;
 }
 
-.header--profile--account li a:hover{
-    text-decoration: underline;
+.header--profile--account li a:hover {
+  text-decoration: underline;
 }
+
 /* ------------ Search-bar ------------ */
-.section-search--container{
-    margin-top: 100px;
-    width: 100%
+.section-search--container {
+  margin-top: 100px;
+  width: 100%;
 }
 
-.search--container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+.search--container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .search--container > p, input,
-.item__info--text p{
-    color: var(--white);
+.item__info--text p {
+  color: var(--white);
 }
 
-.search--container  p{
-    font-size: 24px;
-    margin-bottom: 20px;
+.search--container p {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.search--container input{
-    border: 2px solid var(--white);
-    border-radius: 30px;
-    background-color: rgba(255,255,255,0.1);
-    font-size: 18px;
-    height: 50px;
-    outline: none;
-    padding: 0 20px;
-    width: 70%;
+.search--container input {
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  height: 50px;
+  outline: none;
+  padding: 0 20px;
+  width: 70%;
 }
 
-.search--container input::placeholder{
-    color: var(--white);
+.search--container input::placeholder {
+  color: var(--white);
 }
+
 /* ------------ My List ------------ */
-.section__mylist--container{
-    margin: 50px 0 70px 0;
-    padding: 0 20px;
-    width: 100%;
+.section__mylist--container {
+  margin: 50px 0 70px 0;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.section__mylist--container h2{
-    color: var(--white);
-    font-size: 22px;
+.section__mylist--container h2 {
+  color: var(--white);
+  font-size: 22px;
 }
 
-.mylist--container{
-    overflow: scroll;
-    padding: 65px 0;
-    white-space: nowrap;
+.mylist--container {
+  overflow: scroll;
+  padding: 65px 0;
+  white-space: nowrap;
 }
 
-.mylist--container::-webkit-scrollbar{
-    display: none;
+.mylist--container::-webkit-scrollbar {
+  display: none;
 }
 
-.mylist--container:hover .mylist--item{
-    opacity: 0.3;
+.mylist--container:hover .mylist--item {
+  opacity: 0.3;
 }
 
-.mylist--item{
-    border-radius: 20px;
-    cursor: pointer;
-    display: inline-block;
-    height: 240px;
-    margin: 0 5px;
-    overflow: hidden;
-    position: relative;
-    transition: 450ms all;
-    transform-origin: center left;
-    width: 200px;
+.mylist--item {
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 240px;
+  margin: 0 5px;
+  overflow: hidden;
+  position: relative;
+  transition: 450ms all;
+  transform-origin: center left;
+  width: 200px;
 }
 
-.mylist--item:hover ~ .mylist--item{
-    transform: translate3d(100px, 0, 0);
+.mylist--item:hover ~ .mylist--item {
+  transform: translate3d(100px, 0, 0);
 }
 
-.mylist--container:hover .mylist--item:hover{
-    opacity: 1;
-    transform: scale(1.5);
+.mylist--container:hover .mylist--item:hover {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
-.mylist--item img{
-    object-fit: cover;
-    height: inherit;
-    width: inherit;
+.mylist--item img {
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
 }
 
-.mylyst__item--info{
-    background-color: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-    bottom: 0;
-    left: 0;
-    opacity: 0.7;
-    position: absolute;
-    right: 0;
-    transition: 450ms opacity;
+.mylyst__item--info {
+  background-color: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  transition: 450ms opacity;
 }
 
-.mylyst__item--info{
-    padding: 5px 10px;
+.mylyst__item--info {
+  padding: 5px 10px;
 }
 
-.item__info--buttons img{
-    width: 30px;
-    height: 30px;
+.item__info--buttons img {
+  width: 30px;
+  height: 30px;
 }
 
-.item__info--text{
-    font-size: 14px;
+.item__info--text {
+  font-size: 14px;
 }
+
 /* ------------------------ Login ------------------------ */
 /* ------------ Header ------------ */
-.login__container{
-    background: linear-gradient(var(--green), var(--purple-light));
-    width: 100%
+.login__container {
+  background: linear-gradient(var(--green), var(--purple-light));
+  width: 100%;
 }
 
-.header__login{
-    align-items: center;
-    display: flex;
-    height: 80px;
-    top: 0;
-    width: 100%;
+.header__login {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  top: 0;
+  width: 100%;
 }
 
-.header__login img{
-    margin-left: 20px;
-    width: 200px;
+.header__login img {
+  margin-left: 20px;
+  width: 200px;
 }
 
-.login__card--container{
-    display: flex;
-    justify-content: center;
+.login__card--container {
+  display: flex;
+  justify-content: center;
 }
 
-.login__card{
-    border-radius: 30px;
-    border: 2px solid var(--white);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    padding: 40px 68px 60px;
-    width: 400px;
+.login__card {
+  border-radius: 30px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 40px 68px 60px;
+  width: 400px;
 }
 
-.login__card p{
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 70px;
+.login__card p {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
-.login__card--check{
-    display: flex;
-    font-size: 12px;
-    justify-content: space-between;
-    width: 100%;
+.login__card--check {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.login__card--check input[type=checkbox]{
-    align-self: center;
-    margin-right: 5px;
+.login__card--check input[type=checkbox] {
+  align-self: center;
+  margin-right: 5px;
 }
 
-.login__card--check a{
-    cursor: pointer;
-    margin-top: 0;
+.login__card--check a {
+  cursor: pointer;
+  margin-top: 0;
 }
 
-.login__card--check a:hover{
-    text-decoration: underline;
+.login__card--check a:hover {
+  text-decoration: underline;
 }
 
-.login__card form{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.login__card form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.login__card form > input{
-    border: none;
-    border-bottom: 2px solid var(--white);
-    background-color:rgba(0, 0, 0, 0);
-    font-family: "Mulish", sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
-    outline: none;
-    padding: 15px 20px;
-    width: 100%;
-} 
-
-::placeholder{
-    color: var(--white);
+.login__card form > input {
+  border: none;
+  border-bottom: 2px solid var(--white);
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 15px 20px;
+  width: 100%;
 }
 
-.login__card form > button{
-    border: none;
-    background-color:rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    color: var(--white);
-    cursor: pointer;
-    margin-bottom: 20px;
-    outline: none;
-    padding: 15px 0; 
-    width: 100%;
-
+::placeholder {
+  color: var(--white);
 }
 
-.login__card--social{
-    display: flex;
-    flex-direction: column;
-    padding: 60px 0;
-}
-.login__card--social p{
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0 0;
-}
-
-.social--network{
-    align-items: center;
-    display: flex;
-    padding: 10px 0;
+.login__card form > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  color: var(--white);
+  cursor: pointer;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 15px 0;
+  width: 100%;
 }
 
-.social--network:hover{
-    text-decoration: underline;
+.login__card--social {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
 }
 
-.social--network img{
-    height: 20px;
-    margin-right: 15px;
-    width: 20px;
+.login__card--social p {
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 0;
 }
 
-.login__card .card--register{
-    font-size: 12px;
-    margin: 0 0;
+.social--network {
+  align-items: center;
+  display: flex;
+  padding: 10px 0;
 }
 
-.login__card .card--register a{
-    color: var(--white);
-    font-size: 16px;
-    padding-left: 2px;
-    text-decoration: none;
+.social--network:hover {
+  text-decoration: underline;
 }
 
-.login__card .card--register a:hover{
-    text-decoration: underline;
+.social--network img {
+  height: 20px;
+  margin-right: 15px;
+  width: 20px;
 }
 
-footer{
-    display: flex;
-    height: auto;
-    justify-content: flex-start;
-    margin-top: 10px;
-    width: 100%;
+.login__card .card--register {
+  font-size: 12px;
+  margin: 0 0;
 }
 
-footer a{
-    color: var(--white);
-    margin:  30px 20px;
-    text-decoration: none;
+.login__card .card--register a {
+  color: var(--white);
+  font-size: 16px;
+  padding-left: 2px;
+  text-decoration: none;
 }
 
-footer a:hover{
-    text-decoration: underline;
+.login__card .card--register a:hover {
+  text-decoration: underline;
 }
+
+footer {
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  margin-top: 10px;
+  width: 100%;
+}
+
+footer a {
+  color: var(--white);
+  margin: 30px 20px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* ------------------------ Register ------------------------ */
-.card--link{
-    color: white;
-    margin-top: 50px;
-    text-align: center;
-    text-decoration: none;
+.card--link {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.card--link:hover{
-    text-decoration: underline;
+.card--link:hover {
+  text-decoration: underline;
 }
+
 /* ------------------------ Error (404) ------------------------ */
-.error--container{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
+.error--container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
 }
 
-.error__text--container{
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: pulse;
-    animation-fill-mode: both;
-    align-self: center;
-    color: var(--white);
-    text-align: center;
+.error__text--container {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-fill-mode: both;
+  align-self: center;
+  color: var(--white);
+  text-align: center;
 }
 
-@keyframes pulse{
-    from{
-        transform: scale(1);
-    }to{
-        transform: scale(1.5);
-    }
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.error__text--container h2 {
+  font-size: 150px;
 }
 
-
-.error__text--container h2{
-    font-size: 150px;
+.error__text--container p {
+  font-size: 20px;
 }
 
-.error__text--container p{
-    font-size: 20px;
-}
+/*# sourceMappingURL=main.css.map */
