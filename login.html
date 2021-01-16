@@ -13,31 +13,31 @@
     </head>
     <body class="login__container">
         <header class="header__login">
-            <a href="/">
+            <a tabindex="0" href="/">
                 <img src="assets/img/logo-platzi.webp" alt="Platzi video logo">
             </a>
         </header>
         <section class="login__card--container">
             <div class="login__card">
-                <p>Inicia sesión</p>
+                <p tabindex="0">Inicia sesión</p>
                 <form>
-                    <input type="email" placeholder="Correo" required>
-                    <input type="password" placeholder="Contraseña" required>
+                    <input aria-label="Correo" type="email" placeholder="Correo" required>
+                    <input aria-label="Contraseña" type="password" placeholder="Contraseña" required>
                     <button>Iniciar sesión</button>
                     <div class="login__card--check">
                        <div>
                             <input type="checkbox" id="remember">
-                            <label for="remember">Recuérdame</label>
+                            <label tabindex="0" for="remember">Recuérdame</label>
                        </div>
-                        <a>Olvidé mi contraseña</a>
+                        <a tabindex="0">Olvidé mi contraseña</a>
                     </div>
                 </form>
                 <div class="login__card--social">
-                    <div class="social--network">
+                    <div tabindex="0" class="social--network">
                         <img src="./assets/img/google-icon.webp" alt="Google icon">
                         <p>Inicia sesión con Google</p>
                     </div>
-                    <div class="social--network">
+                    <div tabindex="0" class="social--network">
                         <img src="./assets/img/Twitter_logo.webp" alt="Twitter icon">
                         <p>Inicia sesión con Twitter</p>
                     </div>
